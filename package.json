@@ -1,0 +1,18 @@
+{
+  "name": "doswift",
+  "version": "1.0.0",
+  "description": "Chinese first Swift conf, organized by DO.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "numbbbbb",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.0.6",
+    "jeet": "^6.1.2",
+    "rupture": "^0.6.1"
+  }
+}
