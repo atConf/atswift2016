@@ -23,15 +23,17 @@ html(lang="zh-CN")
       header.header
         div.header__nav
           div.header__btn
-            a 大会介绍
-          div.header__btn
             a 演讲嘉宾
           div.header__btn
-            a 日程安排
+            a 大会介绍
+          div.header__btn
+            a 买票参会
           div.header__btn
             a 赞助商
           div.header__btn
-            a 地图
+            a 合作媒体
+          div.header__btn
+            a 会场位置
           div.header__btn.highlight
             a 购票
         div.header__social
@@ -48,28 +50,85 @@ html(lang="zh-CN")
               i.fa.fa-twitter
     section.speaker
       h1 演讲嘉宾
-      div.speaker__card
+      div.speaker__card.r.b
         div.speaker__content
-          img(src="http://2015.jsconf.cn/images/speakers/7.jpg")
+          h4.name CHRIS EIDHOF
+          img(src="../assets/img/chris.png")
+          p.detail Chris 是一位生活在（德国）柏林的荷兰开发者。他把大部分时间都花在开发 iOS 和 Mac 应用上，作品包括 #[a(href="http://decksetapp.com") Deckset] 和 #[a(href="http://www.getscenery.com") Scenery]。Chris 还创办了 #[a(href="http://www.uikonf.com") UIKonf] 和 #[a(href="http://www.objc.io") objc.io]。此外，他还是一位作者，著有 #[a(href="http://www.objc.io/books/fpinswift") Functional Programming in Swift]，目前正在编写 #[a(href="http://www.objc.io/books/") Advanced Swift]。
 
-      div.speaker__card
+      div.speaker__card.b
         div.speaker__content
-          img(src="http://2015.jsconf.cn/images/speakers/7.jpg")
+          h4.name SAM SOFFES
+          img(src="../assets/img/sam.png")
+          p.detail Sam 是一位开发者和设计师，代表作有 Tiiny、Litely、Cheddar、Hipstamatic 和 Bible。Sam 生活在旧金山，是一位狂热的摩托车手。他的 Twitter 和 GitHub 是 @soffes。
 
-      div.speaker__card 
+      div.speaker__card.b.l
         div.speaker__content
-          img(src="http://2015.jsconf.cn/images/speakers/7.jpg")
+          h4.name 王巍
+          img(src="../assets/img/wangwei.png")
+          p.detail @onevcat，江湖人称“喵神”。iOS 和 Unity3D 开发者，旅居日本，目前供职于 LINE。著有《Swifter - 100 个 Swift 必备 tips》
 
-      div.speaker__card 
+      div.speaker__card.r
         div.speaker__content
-          img(src="http://2015.jsconf.cn/images/speakers/7.jpg")
-
-      div.speaker__card 
-        div.speaker__content
-          img(src="http://2015.jsconf.cn/images/speakers/7.jpg")
-
-    section#agenda
-    section#reason
-    section#map
+          h4.name 李洁信
+          img(src="../assets/img/lijiexin.jpg")
+          p.detail 美国加州州立大学计算机硕士，前网易新闻客户端 iOS 核心开发，#[a(href="http://swiftist.org") swiftist.org] 社区创始人，”Listen+“看视频学英语 App 创始人，”奴隶社会”公众号和相关社区 App ”磁场“技术合伙人。
+    section.intro
+      div.intro__content
+        h1 大会介绍
+        div.intro__card
+          img(src="http://v3.bootcss.com/assets/img/sass-less.png")
+          h3.intro__reason 非盈利
+          p.intro__detail @Swift 是由 @Conf 团队组织的一场<b>非盈利</b>的技术大会，所有收入全部用于大会本身支出，包括会场租赁、嘉宾差旅、参会者福利等等。@Conf 团队不会利用大会牟利。
+        div.intro__card
+          img(src="http://v3.bootcss.com/assets/img/devices.png")
+          h3.intro__reason 开发者 to 开发者
+          p.intro__detail @Swift 是一场由开发者做给开发者的技术盛宴，我们和你一样是开发者，你喜欢的你想要的也同样是我们所追求的。
+        div.intro__card
+          img(src="http://v3.bootcss.com/assets/img/components.png")
+          h3.intro__reason 高质量
+          p.intro__detail 虽然大会收入部分来自赞助商，但是请大家放心，无论是明规则还是潜规则，任何人都无法影响演讲内容！所有的演讲嘉宾和演讲内容都会经过我们的严格筛选，保证大家听到的是纯技术干货。
+    section.ticket
+      h1 为什么要买票参加
+      ul
+        li 只有身处现场你才能和嘉宾提问和互动
+        li 你可以和几百位对 Swift <b>真正感兴趣</b>的开发者交流
+        li 会后我们会放出视频，但是不包含提问环节——只有在现场才能参与提问
+        li 所有收入全部用于大会支出，你们才是这场大会真正的主人！
+      div.ticket__btn
+        a(href="" target="_blank") 我要购票
+    section.sponsor
+      div.sponsor__content
+        h1 赞助商
+        h4 赞助商招募中，有兴趣请邮件联系 #[a(href="mailto:lj925184928@gmail.com") 梁杰]。
+    section.medias
+      h1 合作媒体
+      div.medias__logo
+        a.medias__card(href="http://segmentfault.com" target="_blank")
+          img(src="../assets/img/medias/sf.png")
+        a.medias__card(href="http://www.36kr.com" target="_blank")
+          img(src="../assets/img/medias/36kr.png")
+        a.medias__card(href="http://www.infoq.com/cn/" target="_blank")
+          img(src="../assets/img/medias/infoq.jpg")
+        a.medias__card(href="http://www.csdn.net" target="_blank")
+          img(src="../assets/img/medias/csdn.png")
+        a.medias__card(href="http://www.pingwest.com" target="_blank")
+          img(src="../assets/img/medias/pw.png")
+        a.medias__card(href="http://www.jikexueyuan.com" target="_blank")
+          img(src="../assets/img/medias/jkxy.png")
+    section.map
+      div.map__content
+        h1 会场位置
+        h4 会场目前待定
+    section.subscribe
+      h2 订阅最新消息
+      div.subscribe__main
+        input.subscribe__email(type="email" placeholder="邮箱地址")
+        a.subscribe__btn(href="") 订阅
     footer
-
+      div.main
+        div
+          a(href="") 由 @Conf 团队组织
+        div
+          a(href="") 联系我们
+      
