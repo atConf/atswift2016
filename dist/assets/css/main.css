@@ -706,6 +706,7 @@ body .map {
   margin-right: 0%;
   color: #34495e;
   background-color: #f8f8f8;
+  margin-bottom: 6rem;
 }
 body .map:before,
 body .map:after {
