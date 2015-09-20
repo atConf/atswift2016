@@ -390,6 +390,85 @@ body .intro .intro__card h3.intro__reason {
 body .intro .intro__card p.intro__detail {
   margin-top: 2rem;
 }
+body .agenda {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  color: #34495e;
+  background-color: #f8f8f8;
+}
+body .agenda:before,
+body .agenda:after {
+  content: '';
+  display: table;
+}
+body .agenda:after {
+  clear: both;
+}
+body .agenda div.agenda__content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 0%;
+}
+body .agenda div.agenda__content:before,
+body .agenda div.agenda__content:after {
+  content: '';
+  display: table;
+}
+body .agenda div.agenda__content:after {
+  clear: both;
+}
+body .agenda div.agenda__content h1 {
+  *zoom: 1;
+  width: auto;
+  max-width: 30rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+  text-align: center;
+}
+body .agenda div.agenda__content h1:before,
+body .agenda div.agenda__content h1:after {
+  content: '';
+  display: table;
+}
+body .agenda div.agenda__content h1:after {
+  clear: both;
+}
+body .agenda div.agenda__content ul {
+  line-height: 2rem;
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 0%;
+  font-size: 1.6rem;
+  text-align: left;
+}
+body .agenda div.agenda__content ul:before,
+body .agenda div.agenda__content ul:after {
+  content: '';
+  display: table;
+}
+body .agenda div.agenda__content ul:after {
+  clear: both;
+}
 body .ticket {
   *zoom: 1;
   float: left;
