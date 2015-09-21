@@ -6,7 +6,6 @@
 html {
   font-size: 62.5%;
   text-align: center;
-  verticle-align: middle;
 }
 .r {
   border-right: solid 1px #e7e7e7;
@@ -102,7 +101,7 @@ body .info .info__btn a {
   color: #fff;
   display: inline-block;
   line-height: 6rem;
-  verticle-align: middle;
+  vertical-align: middle;
   width: 36rem;
   height: 6rem;
   border-radius: 25rem;
@@ -150,7 +149,7 @@ body .header .sm_nav {
   margin-right: 0%;
   display: none;
   height: 4rem;
-  verticle-align: middle;
+  vertical-align: middle;
 }
 body .header .sm_nav:before,
 body .header .sm_nav:after {
