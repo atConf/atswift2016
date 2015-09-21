@@ -126,7 +126,7 @@ body .header .header__nav .header__btn {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 14.285714285714285%;
+  width: 20%;
   margin-left: 0%;
   margin-right: 0%;
   padding-top: 0.5rem;
@@ -450,7 +450,6 @@ body .agenda div.agenda__content h1:after {
   clear: both;
 }
 body .agenda div.agenda__content ul {
-  line-height: 2rem;
   *zoom: 1;
   float: left;
   clear: none;
@@ -458,6 +457,8 @@ body .agenda div.agenda__content ul {
   width: 60%;
   margin-left: 20%;
   margin-right: 0%;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
   font-size: 1.6rem;
   text-align: left;
   margin-bottom: 6rem;
@@ -513,7 +514,6 @@ body .ticket h1:after {
   clear: both;
 }
 body .ticket ul {
-  line-height: 2rem;
   *zoom: 1;
   float: left;
   clear: none;
@@ -521,6 +521,8 @@ body .ticket ul {
   width: 60%;
   margin-left: 20%;
   margin-right: 0%;
+  letter-spacing: 0.1rem;
+  line-height: 2rem;
   font-size: 1.6rem;
 }
 body .ticket ul:before,
@@ -578,6 +580,7 @@ body .sponsor {
   margin-right: 0%;
   color: #34495e;
   background-color: #f8f8f8;
+  padding-bottom: 6rem;
 }
 body .sponsor:before,
 body .sponsor:after {
@@ -641,6 +644,7 @@ body .medias {
   margin-left: 25%;
   margin-right: 0%;
   color: #34495e;
+  padding-bottom: 6rem;
 }
 body .medias:before,
 body .medias:after {
@@ -706,7 +710,7 @@ body .map {
   margin-right: 0%;
   color: #34495e;
   background-color: #f8f8f8;
-  margin-bottom: 6rem;
+  padding-bottom: 6rem;
 }
 body .map:before,
 body .map:after {
@@ -764,6 +768,7 @@ body .subscribe {
   width: 100%;
   margin-left: 0%;
   margin-right: 0%;
+  height: 6rem;
   background-color: #2770e7;
   padding: 1rem;
 }
@@ -776,7 +781,6 @@ body .subscribe:after {
   clear: both;
 }
 body .subscribe h2 {
-  letter-spacing: 2px;
   *zoom: 1;
   float: left;
   clear: none;
@@ -784,6 +788,10 @@ body .subscribe h2 {
   width: 30%;
   margin-left: 20%;
   margin-right: 0%;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  padding-top: 0.625rem;
   color: #fff;
 }
 body .subscribe h2:before,
@@ -802,8 +810,6 @@ body .subscribe div.subscribe__main {
   width: 50%;
   margin-left: 0%;
   margin-right: 0%;
-  height: 6rem;
-  padding: 1rem;
 }
 body .subscribe div.subscribe__main:before,
 body .subscribe div.subscribe__main:after {
@@ -854,9 +860,7 @@ body .subscribe div.subscribe__main a.subscribe__btn {
   width: 10rem;
   height: 4rem;
   border-radius: 0 2rem 2rem 0;
-  padding: 0.5rem;
   line-height: 200%;
-  vertical-align: middle;
   font-size: 2rem;
   text-decoration: none;
 }
@@ -911,7 +915,7 @@ body footer div.main div {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 50%;
+  width: 25%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -924,6 +928,23 @@ body footer div.main div:after {
   clear: both;
 }
 body footer div.main div a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
+}
+body footer div.main div.long {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 50%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+body footer div.main div.long:before,
+body footer div.main div.long:after {
+  content: '';
+  display: table;
+}
+body footer div.main div.long:after {
+  clear: both;
 }

@@ -6,7 +6,7 @@ html(lang="zh-CN")
     meta(charset="UTF-8")/
     title @Swift | 中国首届 Swift 开发者大会
     link(rel="stylesheet" type="text/css" href="../assets/css/vendor/bootstrap.min.css")/
-    link(rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css")
+    link(rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css")
     link(rel="stylesheet" type="text/css" href="../assets/css/main.css")
     script(type="text/javascript" src="../assets/js/zepto.min.js")
     script(type="text/javascript" src="../assets/js/main.js")
@@ -23,26 +23,22 @@ html(lang="zh-CN")
       header.header
         div.header__nav
           div.header__btn
-            a 大会介绍
+            a(href="#intro") 大会介绍
           div.header__btn
-            a 演讲嘉宾
+            a(href="#speaker") 演讲嘉宾
           div.header__btn
-            a 大会主题
+            a(href="#agenda") 大会主题
           div.header__btn
-            a 购票参会
+            a(href="#sponsor") 赞助商
           div.header__btn
-            a 赞助商
-          div.header__btn
-            a 合作媒体
-          div.header__btn
-            a 会场位置
+            a(href="#medias") 合作媒体
           //- div.header__btn.highlight
           //-   a 购票
         div.header__social
           div.header__social__btn
             a EN
           div.header__social__btn
-            a(href="" target="_blank")
+            a(href="http://weibo.com/atswift" target="_blank")
               i.fa.fa-weibo
           div.header__social__btn
             a(href="" target="_blank")
@@ -50,7 +46,7 @@ html(lang="zh-CN")
           div.header__social__btn
             a(href="" target="_blank")
               i.fa.fa-twitter
-    section.intro
+    section.intro(id="intro")
       div.intro__content
         h1 大会介绍
         div.intro__card
@@ -65,7 +61,7 @@ html(lang="zh-CN")
           img(src="http://v3.bootcss.com/assets/img/components.png")
           h3.intro__reason 高质量
           p.intro__detail 虽然大会收入部分来自赞助商，但是请大家放心，无论是明规则还是潜规则，任何人都无法影响演讲内容！所有的演讲嘉宾和演讲内容都会经过我们的严格筛选，保证大家听到的是纯技术干货。
-    section.speaker
+    section.speaker(id="speaker")
       h1 演讲嘉宾
       div.speaker__card.r.b
         div.speaker__content
@@ -90,7 +86,14 @@ html(lang="zh-CN")
           h4.name 李洁信
           img(src="../assets/img/lijiexin.jpg")
           p.detail 美国加州州立大学计算机硕士，前网易新闻客户端 iOS 核心开发，#[a(href="http://swiftist.org") swiftist.org] 社区创始人，”Listen+“看视频学英语 App 创始人，”奴隶社会”公众号和相关社区 App ”磁场“技术合伙人。
-    section.agenda
+      div.speaker__card
+        div.speaker__content
+          h4.name ？？？
+          img(src="../assets/img/avatar.png")
+          p.detail 更多嘉宾邀请中……
+      div.speaker__card.l
+        div.speaker__content
+    section.agenda(id="agenda")
       div.agenda__content
         h1 大会主题
         ul
@@ -107,11 +110,11 @@ html(lang="zh-CN")
         li 所有收入全部用于大会支出，你们才是这场大会真正的主人！
       div.ticket__btn
         a(href="" target="_blank") 我要购票
-    section.sponsor
+    section.sponsor(id="sponsor")
       div.sponsor__content
         h1 赞助商
         h4 赞助商招募中，有兴趣请邮件联系 #[a(href="mailto:lj925184928@gmail.com") 梁杰]。
-    section.medias
+    section.medias(id="medias")
       h1 合作媒体
       div.medias__logo
         a.medias__card(href="http://segmentfault.com" target="_blank")
@@ -138,7 +141,17 @@ html(lang="zh-CN")
     footer
       div.main
         div
-          a(href="") 由 @Conf 团队组织
+          span Build by #[a(href="") @Conf]
+        div.long
+          span Design by #[a(href="https://github.com/erqiudao") @erqiuda] & #[a(href="https://github.com/z4rd") @z4rd]
         div
-          a(href="") 联系我们
+          a(href="mailto:lj925184928@gmail.com") 联系我们
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-67871901-1', 'auto');
+      ga('send', 'pageview');
       
