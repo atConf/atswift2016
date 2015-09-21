@@ -74,7 +74,8 @@ body
         background-color #5399fc
         color white
         display inline-block
-        padding 1rem
+        line-height 6rem
+        verticle-align middle
         width 36rem
         +below(500px)
           width 20rem
@@ -305,7 +306,8 @@ body
         background-color #5399fc
         color white
         display inline-block
-        padding 1rem
+        vertical-align middle
+        line-height 6rem
         width 36rem
         +below(500px)
           width 25rem
@@ -378,18 +380,22 @@ body
       height 10rem
     background-color #2770E7
     padding 1rem
-    h2
+    vertical-align middle
+    .part0
       span(0.2, offset:0.2)
       +below(1024px)
         span(0.3, offset:0.1)
       +below(500px)
         span(1)
-        padding-top 0
-      margin-top 0
-      margin-bottom 0
-      letter-spacing 2px
-      padding-top 0.625rem
-      color white
+      line-height 4rem
+      height 100%
+      h2
+        margin-top 0
+        margin-bottom 0
+        letter-spacing 2px
+        line-height 4rem
+        vertical-align middle
+        color white
     div.subscribe__main
       span(0.5)
       +below(500px)
@@ -410,10 +416,10 @@ body
       div.part2
         span(0.382)
         a.subscribe__btn
-          padding-top 0.5rem
           border none
           display inline-block
           text-align center
+          vertical-align middle
           background-color #5399fc
           color white
           width 100%

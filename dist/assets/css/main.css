@@ -101,7 +101,8 @@ body .info .info__btn a {
   background-color: #5399fc;
   color: #fff;
   display: inline-block;
-  padding: 1rem;
+  line-height: 6rem;
+  verticle-align: middle;
   width: 36rem;
   height: 6rem;
   border-radius: 25rem;
@@ -942,7 +943,8 @@ body .ticket .ticket__btn a {
   background-color: #5399fc;
   color: #fff;
   display: inline-block;
-  padding: 1rem;
+  vertical-align: middle;
+  line-height: 6rem;
   width: 36rem;
   height: 6rem;
   border-radius: 25rem;
@@ -1235,6 +1237,7 @@ body .subscribe {
   height: 6rem;
   background-color: #2770e7;
   padding: 1rem;
+  vertical-align: middle;
 }
 body .subscribe:before,
 body .subscribe:after {
@@ -1249,7 +1252,7 @@ body .subscribe:after {
     height: 10rem;
   }
 }
-body .subscribe h2 {
+body .subscribe .part0 {
   *zoom: 1;
   float: left;
   clear: none;
@@ -1257,22 +1260,19 @@ body .subscribe h2 {
   width: 20%;
   margin-left: 20%;
   margin-right: 0%;
-  margin-top: 0;
-  margin-bottom: 0;
-  letter-spacing: 2px;
-  padding-top: 0.625rem;
-  color: #fff;
+  line-height: 4rem;
+  height: 100%;
 }
-body .subscribe h2:before,
-body .subscribe h2:after {
+body .subscribe .part0:before,
+body .subscribe .part0:after {
   content: '';
   display: table;
 }
-body .subscribe h2:after {
+body .subscribe .part0:after {
   clear: both;
 }
 @media only screen and (max-width: 1024px) {
-  body .subscribe h2 {
+  body .subscribe .part0 {
     *zoom: 1;
     float: left;
     clear: none;
@@ -1281,17 +1281,17 @@ body .subscribe h2:after {
     margin-left: 10%;
     margin-right: 0%;
   }
-  body .subscribe h2:before,
-  body .subscribe h2:after {
+  body .subscribe .part0:before,
+  body .subscribe .part0:after {
     content: '';
     display: table;
   }
-  body .subscribe h2:after {
+  body .subscribe .part0:after {
     clear: both;
   }
 }
 @media only screen and (max-width: 500px) {
-  body .subscribe h2 {
+  body .subscribe .part0 {
     *zoom: 1;
     float: left;
     clear: none;
@@ -1299,16 +1299,23 @@ body .subscribe h2:after {
     width: 100%;
     margin-left: 0%;
     margin-right: 0%;
-    padding-top: 0;
   }
-  body .subscribe h2:before,
-  body .subscribe h2:after {
+  body .subscribe .part0:before,
+  body .subscribe .part0:after {
     content: '';
     display: table;
   }
-  body .subscribe h2:after {
+  body .subscribe .part0:after {
     clear: both;
   }
+}
+body .subscribe .part0 h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  line-height: 4rem;
+  vertical-align: middle;
+  color: #fff;
 }
 body .subscribe div.subscribe__main {
   *zoom: 1;
@@ -1393,10 +1400,10 @@ body .subscribe div.subscribe__main div.part2:after {
   clear: both;
 }
 body .subscribe div.subscribe__main div.part2 a.subscribe__btn {
-  padding-top: 0.5rem;
   border: none;
   display: inline-block;
   text-align: center;
+  vertical-align: middle;
   background-color: #5399fc;
   color: #fff;
   width: 100%;
