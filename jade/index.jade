@@ -4,6 +4,7 @@ html(lang="zh-CN")
 
   head
     meta(charset="UTF-8")/
+    meta(name="viewport" content="width=device-width, initial-scale=1")/
     title @Swift | 中国首届 Swift 开发者大会
     link(rel="stylesheet" type="text/css" href="../assets/css/vendor/bootstrap.min.css")/
     link(rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css")
@@ -21,6 +22,21 @@ html(lang="zh-CN")
         div.info__btn
           a 购票参会
       header.header
+        div.sm_nav
+          div.header__btn
+            a
+              i.fa.fa-bars
+          ul.sm_btns
+            li
+              a(href="#intro") 大会介绍
+            li
+              a(href="#speaker") 演讲嘉宾
+            li
+              a(href="#agenda") 大会主题
+            li
+              a(href="#sponsor") 赞助商
+            li
+              a(href="#medias") 合作媒体
         div.header__nav
           div.header__btn
             a(href="#intro") 大会介绍
@@ -95,7 +111,7 @@ html(lang="zh-CN")
           h4.name ？？？
           img(src="../assets/img/avatar.png")
           p.detail 更多嘉宾邀请中……
-      div.speaker__card.l
+      div.speaker__card.l.null
         div.speaker__content
     section.agenda(id="agenda")
       div.agenda__content

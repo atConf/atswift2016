@@ -2,6 +2,8 @@
 
 *
   font-family 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+  -webkit-text-size-adjust none
+  -webkit-transform-origin-x 0
 
 html
   font-size 62.5%
@@ -16,8 +18,21 @@ html
   border-top 1px solid #E7E7E7
 .l
   border-left 1px solid #E7E7E7
++below(768px)
+  .r,.b,.t,.l
+    border none
+  div.null
+    display none
 
 body
+  layout1()
+    span(0.7, offset:0.15)
+  layout1_sm()
+    span(0.9, offset:0.05)
+  layout2()
+    span(0.5, offset:0.25)
+  layout2_sm()
+    span(0.9, offset:0.05)
   font-size 1.6rem
   .info
     span(1)
@@ -27,9 +42,15 @@ body
     background-position 0 0 
     text-align center
     font-size 2rem
+    +below(500px)
+      font-size 1rem
     color white
     .info__content
       width 60rem
+      +below(500px)
+        width 20rem
+        margin-left -10rem
+        margin-top -10rem
       height 30rem
       position absolute
       top 50%
@@ -41,6 +62,9 @@ body
     .info__subtitle
       letter-spacing 8px
       font-size 5rem
+      +below(500px)
+        font-size 2rem
+        letter-spacing 2px
       font-weight bold
     .info__btn
       padding-top 1rem
@@ -52,6 +76,8 @@ body
         display inline-block
         padding 1rem
         width 36rem
+        +below(500px)
+          width 20rem
         height 6rem
         border-radius 25rem
         font-size 3rem
@@ -68,12 +94,57 @@ body
     padding 1rem
     height 6rem
     
+    .sm_nav
+      span(0.2, offset: 0.1)
+      display none
+      +below(500px)
+        display inline-block
+      height 4rem
+      verticle-align middle
+      .header__btn
+        span(1/5)
+        padding-top 0.9rem
+        text-align center
+        a
+          cursor pointer
+          text-decoration none
+          color #4d4d4d
+          font-size 2rem
+          &:hover
+            color #5399fc
+            text-decoration none
+      ul
+        span(1)
+        display none
+        box-sizing border-box
+        text-align left
+        position absolute
+        bottom 6rem
+        left 0
+        list-style-type none
+        margin 0
+        padding 0
+        height 15rem
+        background white
+        border-bottom solid 1px #ccc
+        border-top solid 1px #ccc
+        li
+          span(0.5, offset: 0.1)
+          padding 0.5rem
+          height 3rem
+          a
+            font-size 1.6rem
+            
     .header__nav
-      span(0.42, offset: 0.29)
+      span(0.42, offset:0.29)
+      +below(1024px)
+        span(0.6, offset:0.1)
+      +below(500px)
+        display none
       height 4rem
       .header__btn
         span(1/5)
-        padding-top 0.5rem
+        padding-top 0.8rem
         text-align center
         a
           cursor pointer
@@ -98,6 +169,10 @@ body
     
     .header__social
       span(0.22, offset: 0.07)
+      +below(1024px)
+        span(0.3)
+      +below(500px)
+        span(0.6)
       height 4rem
       .header__social__btn
         col(1/4)
@@ -118,7 +193,9 @@ body
   
           
   .speaker
-    span(0.7, offset=0.15)
+    layout1()
+    +below(1200px)
+      layout1_sm()
     color #34495e
     h1
       center(30rem)
@@ -128,10 +205,15 @@ body
       text-align center
     .speaker__card
       span(1/3)
-      
+      +below(768px)
+        span(1/2)
+      +below(500px)
+        span(1)
       padding 1rem
       .speaker__content
         span(1)
+        +below(500px)
+          padding 1rem
         padding 4rem
         padding-top 1rem
         h4.name
@@ -146,7 +228,9 @@ body
     color #34495e
     background-color #f8f8f8
     div.intro__content
-      span(0.7, offset=0.15)
+      layout1()
+      +below(1200px)
+        layout1_sm()
     h1
       center(30rem)
       margin-top 6rem
@@ -155,6 +239,8 @@ body
       text-align center
     .intro__card
       span(1/3)
+      +below(500px)
+        span(1)
       padding 2rem
       img
         width 100%
@@ -167,7 +253,9 @@ body
     color #34495e
     background-color #f8f8f8
     div.agenda__content
-      span(0.5, offset=0.25)
+      layout2()
+      +below(1200px)
+        layout2_sm()
       h1
         center(30rem)
         margin-top 6rem
@@ -175,7 +263,10 @@ body
         font-weight bold
         text-align center
       ul
-        span(0.6, offset=0.2)
+        span(0.6, offset:0.2)
+        +below(500px)
+          span(1)
+          text-align left
         line-height 2rem
         letter-spacing 0.1rem
         font-size 1.6rem
@@ -183,7 +274,9 @@ body
         margin-bottom 6rem
   
   .ticket
-    span(0.5, offset=0.25)
+    layout2()
+    +below(1200px)
+      layout2_sm()
     color #34495e
     text-align left
     h1
@@ -193,10 +286,14 @@ body
       font-weight bold
       text-align center
     ul
-      span(0.6, offset=0.2)
+      span(0.6, offset:0.2)
+      +below(500px)
+        span(1)
+        text-align left
       letter-spacing 0.1rem
       line-height 2rem
       font-size 1.6rem
+      text-align left
     .ticket__btn
       span(1)
       text-align center
@@ -210,6 +307,8 @@ body
         display inline-block
         padding 1rem
         width 36rem
+        +below(500px)
+          width 25rem
         height 6rem
         border-radius 25rem
         text-align center
@@ -223,7 +322,9 @@ body
     background-color #f8f8f8
     padding-bottom 6rem
     div.intro__content
-      span(0.5, offset=0.25)
+      layout2()
+      +below(1200px)
+        layout2_sm()
     h1
       center(30rem)
       margin-top 6rem
@@ -235,7 +336,9 @@ body
       margin-bottom 3rem
       text-align center
   .medias
-    span(0.5, offset=0.25)
+    layout2()
+    +below(1200px)
+      layout2_sm()
     color #34495e
     padding-bottom 6rem
     h1
@@ -246,6 +349,8 @@ body
       text-align center
     .medias__card
       span(1/3)
+      +below(500px)
+        span(1/2)
       display inline-block
       padding 1rem
       height 10rem
@@ -257,7 +362,9 @@ body
     background-color #f8f8f8
     padding-bottom 6rem
     div.map__content
-      span(0.5, offset=0.25)
+      layout2()
+      +below(1200px)
+        layout2_sm()
     h1
       center(30rem)
       margin-top 6rem
@@ -267,17 +374,27 @@ body
   .subscribe
     span(1)
     height 6rem
+    +below(500px)
+      height 10rem
     background-color #2770E7
     padding 1rem
     h2
-      span(0.3, offset=0.2)
+      span(0.2, offset:0.2)
+      +below(1200px)
+        span(0.3, offset:0.1)
+      +below(500px)
+        span(1)
+        padding-top 0
       margin-top 0
       margin-bottom 0
       letter-spacing 2px
       padding-top 0.625rem
       color white
     div.subscribe__main
-      span(0.5)
+      span(0.6)
+      +below(500px)
+        span(1)
+        margin-top 1rem
       input.subscribe__email
         span(0.6)
         background: #FFF;
@@ -285,17 +402,26 @@ body
         border none
         color: #4d4d4d;
         width 30rem
+        +below(300px)
+          width 18rem
+        +below(768px)
+          width 22rem
         height 4rem
         line-height: 200%;
         vertical-align: middle;
       a.subscribe__btn
         span(0.4)
+        padding-top 0.5rem
         border none
         display inline-block
         text-align center
         background-color #5399fc
         color white
         width 10rem
+        +below(768px)
+          width 10rem
+        +below(320px)
+          width 6rem
         height 4rem
         border-radius: 0 2rem 2rem 0
         line-height: 200%;
@@ -308,7 +434,11 @@ body
     padding 2rem
     vertical-align middle
     div.main
-      span(0.4, offset=0.3)
+      span(0.4, offset:0.3)
+      +below(1200px)
+        span(0.8, offset:0.1)
+      +below(500px)
+        span(1)
       div
         span(1/4)
         a
