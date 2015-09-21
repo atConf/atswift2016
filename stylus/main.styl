@@ -380,7 +380,7 @@ body
     padding 1rem
     h2
       span(0.2, offset:0.2)
-      +below(1200px)
+      +below(1024px)
         span(0.3, offset:0.1)
       +below(500px)
         span(1)
@@ -391,42 +391,37 @@ body
       padding-top 0.625rem
       color white
     div.subscribe__main
-      span(0.6)
+      span(0.5)
       +below(500px)
         span(1)
         margin-top 1rem
-      input.subscribe__email
-        span(0.6)
-        background: #FFF;
-        border-radius: 2rem 0 0 2rem
-        border none
-        color: #4d4d4d;
-        width 30rem
-        +below(300px)
-          width 18rem
-        +below(768px)
-          width 22rem
-        height 4rem
-        line-height: 200%;
-        vertical-align: middle;
-      a.subscribe__btn
-        span(0.4)
-        padding-top 0.5rem
-        border none
-        display inline-block
-        text-align center
-        background-color #5399fc
-        color white
-        width 10rem
-        +below(768px)
-          width 10rem
-        +below(320px)
-          width 6rem
-        height 4rem
-        border-radius: 0 2rem 2rem 0
-        line-height: 200%;
-        font-size 2rem
-        text-decoration none
+      div.part1
+        span(0.618)
+        input.subscribe__email
+          text-align center
+          background: #FFF;
+          border-radius: 2rem 0 0 2rem
+          border none
+          color: #4d4d4d;
+          width 100%
+          height 4rem
+          line-height: 200%;
+          vertical-align: middle;
+      div.part2
+        span(0.382)
+        a.subscribe__btn
+          padding-top 0.5rem
+          border none
+          display inline-block
+          text-align center
+          background-color #5399fc
+          color white
+          width 100%
+          height 4rem
+          border-radius: 0 2rem 2rem 0
+          line-height: 200%;
+          font-size 2rem
+          text-decoration none
   footer
     span(1)
     background-color black

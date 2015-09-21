@@ -1271,7 +1271,7 @@ body .subscribe h2:after {
 body .subscribe h2:after {
   clear: both;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   body .subscribe h2 {
     *zoom: 1;
     float: left;
@@ -1315,7 +1315,7 @@ body .subscribe div.subscribe__main {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 60%;
+  width: 50%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -1347,79 +1347,64 @@ body .subscribe div.subscribe__main:after {
     clear: both;
   }
 }
-body .subscribe div.subscribe__main input.subscribe__email {
+body .subscribe div.subscribe__main div.part1 {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 60%;
+  width: 61.8%;
   margin-left: 0%;
   margin-right: 0%;
+}
+body .subscribe div.subscribe__main div.part1:before,
+body .subscribe div.subscribe__main div.part1:after {
+  content: '';
+  display: table;
+}
+body .subscribe div.subscribe__main div.part1:after {
+  clear: both;
+}
+body .subscribe div.subscribe__main div.part1 input.subscribe__email {
+  text-align: center;
   background: #fff;
   border-radius: 2rem 0 0 2rem;
   border: none;
   color: #4d4d4d;
-  width: 30rem;
+  width: 100%;
   height: 4rem;
   line-height: 200%;
   vertical-align: middle;
 }
-body .subscribe div.subscribe__main input.subscribe__email:before,
-body .subscribe div.subscribe__main input.subscribe__email:after {
-  content: '';
-  display: table;
-}
-body .subscribe div.subscribe__main input.subscribe__email:after {
-  clear: both;
-}
-@media only screen and (max-width: 300px) {
-  body .subscribe div.subscribe__main input.subscribe__email {
-    width: 18rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  body .subscribe div.subscribe__main input.subscribe__email {
-    width: 22rem;
-  }
-}
-body .subscribe div.subscribe__main a.subscribe__btn {
+body .subscribe div.subscribe__main div.part2 {
   *zoom: 1;
   float: left;
   clear: none;
   text-align: inherit;
-  width: 40%;
+  width: 38.2%;
   margin-left: 0%;
   margin-right: 0%;
+}
+body .subscribe div.subscribe__main div.part2:before,
+body .subscribe div.subscribe__main div.part2:after {
+  content: '';
+  display: table;
+}
+body .subscribe div.subscribe__main div.part2:after {
+  clear: both;
+}
+body .subscribe div.subscribe__main div.part2 a.subscribe__btn {
   padding-top: 0.5rem;
   border: none;
   display: inline-block;
   text-align: center;
   background-color: #5399fc;
   color: #fff;
-  width: 10rem;
+  width: 100%;
   height: 4rem;
   border-radius: 0 2rem 2rem 0;
   line-height: 200%;
   font-size: 2rem;
   text-decoration: none;
-}
-body .subscribe div.subscribe__main a.subscribe__btn:before,
-body .subscribe div.subscribe__main a.subscribe__btn:after {
-  content: '';
-  display: table;
-}
-body .subscribe div.subscribe__main a.subscribe__btn:after {
-  clear: both;
-}
-@media only screen and (max-width: 768px) {
-  body .subscribe div.subscribe__main a.subscribe__btn {
-    width: 10rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  body .subscribe div.subscribe__main a.subscribe__btn {
-    width: 6rem;
-  }
 }
 body footer {
   *zoom: 1;
