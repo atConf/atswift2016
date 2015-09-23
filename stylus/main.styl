@@ -56,8 +56,15 @@ body
       left 50%
       margin-left -30rem
       margin-top -15rem
-    .info__title
-      letter-spacing 15px
+    .info__logo
+      +below(500px)
+        height (6.5*0.618)rem
+        width (24*0.618)rem
+      height 6.5rem
+      width 24rem
+      
+      text-align center
+      margin-bottom 2rem
     .info__subtitle
       letter-spacing 8px
       font-size 5rem

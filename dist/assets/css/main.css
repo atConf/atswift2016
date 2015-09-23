@@ -77,8 +77,17 @@ body .info .info__content {
     margin-top: -10rem;
   }
 }
-body .info .info__title {
-  letter-spacing: 15px;
+body .info .info__logo {
+  height: 6.5rem;
+  width: 24rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 500px) {
+  body .info .info__logo {
+    height: 4.017rem;
+    width: 14.832rem;
+  }
 }
 body .info .info__subtitle {
   letter-spacing: 8px;
