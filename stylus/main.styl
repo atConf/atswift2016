@@ -1,7 +1,9 @@
 @import 'jeet'
 
-*
-  font-family 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+$font-main = "lato", 'Microsoft YaHei', "微软雅黑", "STXihei", "华文细黑", "sans-serif";
+
+* 
+  font-family $font-main
   -webkit-text-size-adjust none
   -webkit-transform-origin-x 0
 
@@ -66,12 +68,14 @@ body
       text-align center
       margin-bottom 2rem
     .info__subtitle
-      letter-spacing 8px
+      letter-spacing 2px
       font-size 5rem
       +below(500px)
         font-size 2rem
-        letter-spacing 2px
       font-weight bold
+      .info__down
+        font-family arial
+        font-weight normal
     .info__btn
       padding-top 1rem
       a

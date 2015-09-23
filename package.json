@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.0",
+    "gulp-imagemin": "^2.3.0",
     "gulp-jade": "^1.1.0",
     "gulp-stylus": "^2.0.6",
+    "imagemin-jpeg-recompress": "^4.3.0",
     "jeet": "^6.1.2",
     "rupture": "^0.6.1"
   }

@@ -1,5 +1,5 @@
 * {
-  font-family: 'Helvetica Neue', Helvetica, 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+  font-family: "lato", 'Microsoft YaHei', "微软雅黑", "STXihei", "华文细黑", "sans-serif";
   -webkit-text-size-adjust: none;
   -webkit-transform-origin-x: 0;
 }
@@ -90,15 +90,18 @@ body .info .info__logo {
   }
 }
 body .info .info__subtitle {
-  letter-spacing: 8px;
+  letter-spacing: 2px;
   font-size: 5rem;
   font-weight: bold;
 }
 @media only screen and (max-width: 500px) {
   body .info .info__subtitle {
     font-size: 2rem;
-    letter-spacing: 2px;
   }
+}
+body .info .info__subtitle .info__down {
+  font-family: arial;
+  font-weight: normal;
 }
 body .info .info__btn {
   padding-top: 1rem;
