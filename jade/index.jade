@@ -15,7 +15,7 @@ html(lang="zh-CN")
     script(type="text/javascript" src="../assets/js/main.js")
    
   body
-    img(src="../assets/img/wechatLogo.png" style="display:none")
+    img(src="../assets/img/wechatLogo.png" style="position: fixed; top: -9999px;")
     section.info
       div.info__content
         img(src="../assets/img/logo.png").info__logo
@@ -68,15 +68,15 @@ html(lang="zh-CN")
       div.intro__content
         h1 大会介绍
         div.intro__card
-          img(src="http://v3.bootcss.com/assets/img/sass-less.png")
+          img(src="../assets/img/intro1.png")
           h3.intro__reason 非盈利
           p.intro__detail @Swift 是由 @Conf 团队组织的一场<b>非盈利</b>的技术大会，所有收入全部用于大会本身支出，包括会场租赁、嘉宾差旅、参会者福利等等。
         div.intro__card
-          img(src="http://v3.bootcss.com/assets/img/devices.png")
+          img(src="../assets/img/intro2.png")
           h3.intro__reason 开发者 to 开发者
           p.intro__detail @Swift 是一场由开发者做给开发者的技术盛宴，我们和你一样是开发者，你喜欢的你想要的也同样是我们所追求的。
         div.intro__card
-          img(src="http://v3.bootcss.com/assets/img/components.png")
+          img(src="../assets/img/intro2.png")
           h3.intro__reason 高质量
           p.intro__detail 所有的演讲嘉宾和演讲内容都会经过我们的严格筛选，保证大家听到的是纯技术干货。
     section.speaker(id="speaker")
