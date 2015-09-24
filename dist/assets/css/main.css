@@ -221,8 +221,10 @@ body .header .sm_nav ul {
   left: 0;
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  height: 15rem;
+  padding-left: 4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  height: 21rem;
   background: #fff;
   border-bottom: solid 1px #ccc;
   border-top: solid 1px #ccc;
@@ -240,11 +242,14 @@ body .header .sm_nav ul li {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 50%;
-  margin-left: 10%;
+  width: 80%;
+  margin-left: 0%;
   margin-right: 0%;
-  padding: 0.5rem;
-  height: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 3rem;
+  vertical-align: middle;
+  height: 4rem;
 }
 body .header .sm_nav ul li:before,
 body .header .sm_nav ul li:after {
