@@ -698,7 +698,7 @@ body .intro .intro__card:after {
   }
 }
 body .intro .intro__card img {
-  width: 100%;
+  width: 40%;
 }
 body .intro .intro__card h3.intro__reason {
   margin-bottom: 2rem;
@@ -796,7 +796,6 @@ body .agenda div.agenda__content ul {
   letter-spacing: 0.1rem;
   font-size: 1.6rem;
   text-align: left;
-  margin-bottom: 6rem;
 }
 body .agenda div.agenda__content ul:before,
 body .agenda div.agenda__content ul:after {
@@ -826,6 +825,27 @@ body .agenda div.agenda__content ul:after {
     clear: both;
   }
 }
+body .agenda div.agenda__content p {
+  *zoom: 1;
+  width: auto;
+  max-width: 10rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  color: #808080;
+  margin-bottom: 6rem;
+}
+body .agenda div.agenda__content p:before,
+body .agenda div.agenda__content p:after {
+  content: '';
+  display: table;
+}
+body .agenda div.agenda__content p:after {
+  clear: both;
+}
 body .ticket {
   *zoom: 1;
   float: left;
@@ -836,6 +856,7 @@ body .ticket {
   margin-right: 0%;
   color: #34495e;
   text-align: left;
+  letter-spacing: 1px;
 }
 body .ticket:before,
 body .ticket:after {
@@ -867,7 +888,7 @@ body .ticket:after {
 body .ticket h1 {
   *zoom: 1;
   width: auto;
-  max-width: 30rem;
+  max-width: 50rem;
   float: none;
   display: block;
   margin-right: auto;
@@ -887,6 +908,67 @@ body .ticket h1:after {
 body .ticket h1:after {
   clear: both;
 }
+body .ticket p {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 0%;
+}
+body .ticket p:before,
+body .ticket p:after {
+  content: '';
+  display: table;
+}
+body .ticket p:after {
+  clear: both;
+}
+@media only screen and (max-width: 500px) {
+  body .ticket p {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  body .ticket p:before,
+  body .ticket p:after {
+    content: '';
+    display: table;
+  }
+  body .ticket p:after {
+    clear: both;
+  }
+}
+body .ticket .blank {
+  margin-bottom: 3rem;
+}
+body .ticket .hand {
+  *zoom: 1;
+  width: auto;
+  max-width: 10rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+body .ticket .hand:before,
+body .ticket .hand:after {
+  content: '';
+  display: table;
+}
+body .ticket .hand:after {
+  clear: both;
+}
+body .ticket .hand img {
+  width: 100%;
+}
 body .ticket ul {
   *zoom: 1;
   float: left;
@@ -895,7 +977,6 @@ body .ticket ul {
   width: 60%;
   margin-left: 20%;
   margin-right: 0%;
-  letter-spacing: 0.1rem;
   line-height: 2rem;
   font-size: 1.6rem;
   text-align: left;
@@ -937,7 +1018,7 @@ body .ticket .ticket__btn {
   margin-left: 0%;
   margin-right: 0%;
   text-align: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
   margin-bottom: 5rem;
 }
 body .ticket .ticket__btn:before,
@@ -1412,6 +1493,7 @@ body .subscribe div.subscribe__main div.part2:after {
   clear: both;
 }
 body .subscribe div.subscribe__main div.part2 a.subscribe__btn {
+  cursor: pointer;
   border: none;
   display: inline-block;
   text-align: center;
@@ -1538,4 +1620,8 @@ body footer div.main div.long:after {
 }
 body footer div.main div.long:after {
   clear: both;
+}
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
 }
