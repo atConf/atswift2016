@@ -254,7 +254,7 @@ body
         span(1)
       padding 2rem
       img
-        width 100%
+        width 40%
       h3.intro__reason
         margin-bottom 2rem
       p.intro__detail
@@ -282,6 +282,9 @@ body
         letter-spacing 0.1rem
         font-size 1.6rem
         text-align left
+      p
+        center(10rem)
+        color gray
         margin-bottom 6rem
   
   .ticket
@@ -290,25 +293,35 @@ body
       layout2_sm()
     color #34495e
     text-align left
+    letter-spacing 1px
     h1
-      center(30rem)
+      center(50rem)
       margin-top 6rem
       margin-bottom 3rem
       font-weight bold
       text-align center
+    p
+      span(0.6, offset:0.2)
+      +below(500px)
+        span(1)
+    .blank
+      margin-bottom 3rem
+    .hand
+      center(10rem)
+      img
+        width 100%
     ul
       span(0.6, offset:0.2)
       +below(500px)
         span(1)
         text-align left
-      letter-spacing 0.1rem
       line-height 2rem
       font-size 1.6rem
       text-align left
     .ticket__btn
       span(1)
       text-align center
-      margin-top 5rem
+      margin-top 1rem
       margin-bottom 5rem
       a
         cursor pointer
@@ -427,6 +440,7 @@ body
       div.part2
         span(0.382)
         a.subscribe__btn
+          cursor pointer
           border none
           display inline-block
           text-align center
@@ -458,6 +472,10 @@ body
           text-decoration none
       div.long
         span(1/2)
+.disabled {
+  cursor: not-allowed;
+  opacity: .65;
+}
       
         
       
