@@ -58,7 +58,7 @@ Zepto(function($) {
 
     // animate to gotten height
     this.animate({
-      height: "15rem",
+      height: "21rem",
       bottom: "6rem"
     }, duration);
   };
