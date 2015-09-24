@@ -72,8 +72,8 @@ body .info .info__content {
 }
 @media only screen and (max-width: 500px) {
   body .info .info__content {
-    width: 20rem;
-    margin-left: -10rem;
+    width: 26rem;
+    margin-left: -13rem;
     margin-top: -10rem;
   }
 }
@@ -833,7 +833,7 @@ body .agenda div.agenda__content ul:after {
 body .agenda div.agenda__content p {
   *zoom: 1;
   width: auto;
-  max-width: 10rem;
+  max-width: 20rem;
   float: none;
   display: block;
   margin-right: auto;
