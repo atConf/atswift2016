@@ -2,7 +2,7 @@
 
 $font-main = "lato", 'Microsoft YaHei', "微软雅黑", "STXihei", "华文细黑", "sans-serif";
 
-* 
+*
   font-family $font-main
   -webkit-text-size-adjust none
   -webkit-transform-origin-x 0
@@ -37,10 +37,10 @@ body
   font-size 1.6rem
   .info
     span(1)
-    
+
     letter-spacing 3px
     background-image url(../img/bg_bw.jpg)
-    background-position 0 0 
+    background-position 0 0
     text-align center
     font-size 2rem
     +below(500px)
@@ -64,7 +64,7 @@ body
         width (24*0.618)rem
       height 6.5rem
       width 24rem
-      
+
       text-align center
       margin-bottom 2rem
     .info__subtitle
@@ -104,7 +104,7 @@ body
     box-shadow 0px 0px 0.5rem rgba(0, 0, 0, 0.3)
     padding 1rem
     height 6rem
-    
+
     .sm_nav
       span(0.2, offset: 0.1)
       display none
@@ -150,7 +150,7 @@ body
           height 4rem
           a
             font-size 1.6rem
-            
+
     .header__nav
       span(0.42, offset:0.29)
       +below(1024px)
@@ -182,7 +182,7 @@ body
           &:hover
             color white
             background-color #64a3fc
-    
+
     .header__social
       span(0.22, offset: 0.07)
       +below(1024px)
@@ -205,9 +205,9 @@ body
             text-decoration none
           i
             font-size 2rem
-            
-  
-          
+
+
+
   .speaker
     layout1()
     +below(1200px)
@@ -237,8 +237,8 @@ body
           margin-bottom 2rem
         p.detail
           margin-top 2rem
-    
-  
+
+
   .intro
     span(1)
     color #34495e
@@ -291,7 +291,7 @@ body
         center(20rem)
         color gray
         margin-bottom 6rem
-  
+
   .ticket
     layout2()
     +below(1200px)
@@ -307,6 +307,8 @@ body
       text-align center
     p
       span(0.6, offset:0.2)
+      // FIXME the jeet doesn't offer a way to change right offset
+      margin-right: 20%
       +below(500px)
         span(1)
     .blank
@@ -481,6 +483,6 @@ body
   cursor: not-allowed;
   opacity: .65;
 }
-      
-        
-      
+
+
+
