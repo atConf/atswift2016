@@ -32,6 +32,8 @@ body
     span(0.9, offset:0.05)
   layout2()
     span(0.5, offset:0.25)
+  layout2_md()
+    span(0.7, offset:0.15)
   layout2_sm()
     span(0.9, offset:0.05)
   font-size 1.6rem
@@ -370,6 +372,8 @@ body
   .medias
     layout2()
     +below(1200px)
+      layout2_md()
+    +below(500px)
       layout2_sm()
     color #34495e
     padding-bottom 6rem
