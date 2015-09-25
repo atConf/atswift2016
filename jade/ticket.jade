@@ -1,0 +1,23 @@
+doctype html
+
+html(lang="zh-CN")
+
+  head
+    meta(charset="UTF-8")/
+    meta(name="viewport" content="width=device-width, initial-scale=1")/
+    title 欢迎购票
+    link(rel="shortcut icon" type="image/x-icon" href="http://atswift.io/assets/img/favicon.ico")
+    link(rel="apple-touch-icon image_sr" type="image/x-icon" href="http://atswift.io/assets/img/favicon.ico")
+    link(rel="stylesheet" type="text/css" href="http://atswift.io/assets/css/vendor/bootstrap.min.css")/
+    link(rel="stylesheet" type="text/css" href="http://atswift.io/assets/css/font-awesome.min.css")
+    link(rel="stylesheet" type="text/css" href="http://atswift.io/assets/css/main.css")
+    script(type="text/javascript" src="http://atswift.io/assets/js/zepto.min.js")
+    script(type="text/javascript" src="http://atswift.io/assets/js/main.js")
+    script(type="text/javascript" src="http://atswift.io/assets/js/subscribe.js")
+  body
+    section.info
+      div.info__content__qr
+        img(src="http://atswift.io/assets/img/logo.png").info__logo
+        p.info__subtitle 参会门票
+        p.info__date 请于签到时出示此二维码
+        img(src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{hereisdata}}").qrcode
