@@ -921,6 +921,7 @@ body .ticket p {
   width: 60%;
   margin-left: 20%;
   margin-right: 0%;
+  margin-right: 20%;
 }
 body .ticket p:before,
 body .ticket p:after {
