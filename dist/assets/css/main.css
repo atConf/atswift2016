@@ -80,7 +80,7 @@ body .info .info__content {
 }
 body .info .info__content__qr {
   width: 60rem;
-  height: 30rem;
+  height: 35rem;
   overflow: auto;
   position: absolute;
   top: 50%;
@@ -117,7 +117,8 @@ body .info img.qrcode {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 body .info img.qrcode:before,
 body .info img.qrcode:after {
