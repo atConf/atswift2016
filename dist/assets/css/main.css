@@ -127,6 +127,9 @@ body .info img.qrcode:after {
 body .info img.qrcode:after {
   clear: both;
 }
+body .info img.vip {
+  border: 10px solid groove #ffd700;
+}
 body .info .info__subtitle {
   letter-spacing: 2px;
   font-size: 5rem;
