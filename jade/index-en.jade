@@ -5,7 +5,7 @@ html(lang="zh-CN")
   head
     meta(charset="UTF-8")/
     meta(name="viewport" content="width=device-width, initial-scale=1")/
-    title @Swift | 中国首届 Swift 开发者大会
+    title @Swift | First Swift Developer Conference in China
     link(rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.ico")
     link(rel="apple-touch-icon image_sr" type="image/x-icon" href="../assets/img/favicon.ico")
     link(rel="stylesheet" type="text/css" href="../assets/css/vendor/bootstrap.min.css")/
@@ -17,12 +17,12 @@ html(lang="zh-CN")
   body
     img(src="../assets/img/wechatLogo.png" style="position: fixed; top: -9999px;")
     section.info
-      div.info__content
+      div.info__content.en
         img(src="../assets/img/logo.png").info__logo
-        p.info__subtitle 中国首届#[span.info__down Swift]开发者大会
-        p.info__date 2016年1月10日·中国北京
+        p.info__subtitle First Swift Developer Conference in China
+        p.info__date 10th Jan 2016·Beijing China
         div.info__btn
-          a(href="#ticket") 我要参会
+          a(href="#ticket") Get tickets
       header.header
         div.sm_nav
           div.header__btn
@@ -30,31 +30,31 @@ html(lang="zh-CN")
               i.fa.fa-bars
           ul.sm_btns
             li
-              a(href="#intro") 大会介绍
+              a(href="#intro") ABOUT
             li
-              a(href="#speaker") 演讲嘉宾
+              a(href="#speaker") SPEAKERS
             li
-              a(href="#agenda") 大会主题
+              a(href="#agenda") SUBJECTS
             li
-              a(href="#sponsor") 赞助商
+              a(href="#sponsor") SPONSORS
             li
-              a(href="#medias") 合作媒体
+              a(href="#medias") PARTNERS
         div.header__nav
           div.header__btn
-            a(href="#intro") 大会介绍
+            a(href="#intro") ABOUT
           div.header__btn
-            a(href="#speaker") 演讲嘉宾
+            a(href="#speaker") SPEAKERS
           div.header__btn
-            a(href="#agenda") 大会主题
+            a(href="#agenda") SUBJECTS
           div.header__btn
-            a(href="#sponsor") 赞助商
+            a(href="#sponsor") SPONSORS
           div.header__btn
-            a(href="#medias") 合作媒体
+            a(href="#medias") PARTNERS
           //- div.header__btn.highlight
           //-   a 购票
         div.header__social
           div.header__social__btn
-            a(href="./index-en.html") EN
+            a(href="./index.html") CN
           div.header__social__btn
             a(href="http://weibo.com/atswift" target="_blank")
               i.fa.fa-weibo
@@ -66,86 +66,85 @@ html(lang="zh-CN")
               i.fa.fa-twitter
     section.intro(id="intro")
       div.intro__content
-        h1 大会介绍
+        h1 ABOUT THE CONFERENCE
         div.intro__card
           img(src="../assets/img/intro1_red.png")
-          h3.intro__reason 非营利
-          p.intro__detail @Swift 是由 @Conf 团队组织的一场<b>非营利</b>的技术大会，所有收入全部用于大会本身支出，包括会场租赁、嘉宾差旅、参会者福利等等。
+          h3.intro__reason Non profit
+          p.intro__detail @Swift is a non profit conference organized by @Conf team. All incomes will be used for the conference itself, including space expenses, travel fee for speakers and participants' benefits.
         div.intro__card
           img(src="../assets/img/intro2.png")
-          h3.intro__reason 开发者 to 开发者
-          p.intro__detail @Swift 是一场由开发者做给开发者的技术盛宴，我们和你一样是开发者，你喜欢的你想要的也同样是我们所追求的。
+          h3.intro__reason DEV to DEV
+          p.intro__detail @Swift is a tech feast made by developers  for developers. We are developers just like you, what you are looking for is also our main goal.
         div.intro__card
           img(src="../assets/img/intro3.png")
-          h3.intro__reason 高质量
-          p.intro__detail 所有的演讲嘉宾和演讲内容都会经过严格筛选，保证大家听到的是纯技术干货。
+          h3.intro__reason High quality
+          p.intro__detail All of our speakers and subjects are strictly chosen in order to make sure you get the best experience.
     section.speaker(id="speaker")
-      h1 演讲嘉宾
+      h1 SPEAKERS
       div.speaker__card.r.b
         div.speaker__content
           h4.name CHRIS EIDHOF
           a(href="http://www.eidhof.nl/" target="_blank")
             img(src="../assets/img/chris.jpg")
-          p.detail Chris, 生活在德国柏林的荷兰开发者。他把大部分时间都花在开发 iOS 和 Mac 应用上，作品包括 #[a(href="http://decksetapp.com" target="_blank") Deckset] 和 #[a(href="http://www.getscenery.com" target="_blank") Scenery]. Chris 还创办了 #[a(href="http://www.uikonf.com" target="_blank") UIKonf] 和 #[a(href="http://www.objc.io" target="_blank") objc.io]. 此外，他还是一位作者，著有 #[a(href="http://www.objc.io/books/fpinswift" target="_blank") Functional Programming in Swift], 目前正在编写 #[a(href="http://www.objc.io/books/" target="_blank") Advanced Swift].
+          p.detail Chris is a Dutch software developer living in Berlin (Germany). He spends most of his time building iOS and Mac apps, such as #[a(href="http://decksetapp.com" target="_blank") Deckset] and #[a(href="http://www.getscenery.com" target="_blank") Scenery]. He started #[a(href="http://www.uikonf.com" target="_blank") UIKonf], #[a(href="http://www.objc.io" target="_blank") objc.io], wrote a book about #[a(href="http://www.objc.io/books/fpinswift" target="_blank") Functional Programming in Swift] and is currently writing a book on #[a(href="http://www.objc.io/books/" target="_blank") Advanced Swift].
 
       div.speaker__card.b
         div.speaker__content
           h4.name SAM SOFFES
           a(href="http://soff.es" target="_blank")
             img(src="../assets/img/sam.jpg")
-          p.detail Sam, 开发者和设计师，代表作有 Tiiny、Litely、Cheddar、Hipstamatic 和 Bible. Sam 生活在旧金山，是一位狂热的摩托车手。他的 Twitter 和 GitHub 是 @soffes.
+          p.detail Sam is a developer & designer. Some of the notable apps he’s worked on include Tiiny, Litely, Cheddar, Hipstamatic, and Bible. He lives in San Francisco and rides his motorcycle as much as possible. You can find him on Twitter or GitHub as @soffes.
 
       div.speaker__card.b.l
         div.speaker__content
-          h4.name 王巍
+          h4.name WEI WANG
           a(href="http://onev.cat/" target="_blank")
             img(src="../assets/img/wangwei.png")
-          p.detail @onevcat, 江湖人称“喵神”。iOS 和 Unity3D 开发者，旅居日本，目前供职于 LINE. 著有《Swifter - 100 个 Swift 必备 tips》。
+          p.detail @onevcat, also know as '喵神(Cat God)', is an iOS and Unity3D developer. Wang lives in Japan and work for Line now. He is the author of *Swifter - 100 Swift necessary tips*.
 
       div.speaker__card.r
         div.speaker__content
-          h4.name 李洁信
+          h4.name JIEXIN LI
           a(href="https://xitu.io/85" target="_blank")
             img(src="../assets/img/lijiexin.jpg")
-          p.detail 前网易新闻客户端 iOS 开发，创办了国内最早的 Swift 社区 #[a(href="http://swiftist.org" target="_blank") swiftist.org], 2014 年 10 月开始在生产环境使用 Swift, 开发了英语学习 App Listen+.
+          p.detail Former iOS developer at News Application of NetEase. He was the founder of the very first Swift online community in China - #[a(href="http://swiftist.org" target="_blank") swiftist.org]. Starting to use Swift in productive environment in October 2014, he developed the English learning application Listen+.
       div.speaker__card
         div.speaker__content
-          h4.name ？？？
+          h4.name 
           img(src="../assets/img/avatar.png")
-          p.detail 更多嘉宾邀请中……
+          p.detail ~3 MORE SPEAKERS TO BE ANNOUNCED
       div.speaker__card.l.null
         div.speaker__content
     section.agenda(id="agenda")
       div.agenda__content
-        h1 大会主题
+        h1 SUBJECTS
         ul
-          li Swift 2 新特性介绍
-          li Swift 开源的意义及其对开发者的影响
-          li OC 迁移 Swift 最佳实践
-          li 开发者如何顺利过渡到 Swift
-        p (具体议程待定)
+          li New features in Swift 2
+          li The open source of Swift and the impact on developers
+          li Best practices of migrating from Objective-C to Swift
+          li How to learn Swift
     section.ticket(id="ticket")
-      h1 门票
-      p 举办一场高质量的大会不仅需要人也需要钱。会场预订、嘉宾差旅、参会者福利都需要资金支持，因此我们需要通过多种途径筹集资金。
-      p.blank 对于 @Swift 来说，门票是我们最大的资金来源，大会需要你的支持！
-      h1 给我一个买票的理由
+      h1 TICKET
+      p Holding a high-quality conference not only requires energy but alse needs money. Everything will not be able to run without enough financial support, so we are raising money through various ways.
+      p.blank For @Swift, tickets is our main income, we really need your support!
+      h1 Why should I pay for @Swift?
       ul.blank
-        li 这是国内第一场 Swift 大会
-        li 身处现场，和国内外一线 Swift 专家交流
-        li 会后我们会放出视频，但是不包含提问环节——只有在现场才能参与提问
-        li 和几百位对 Swift <b>真正感兴趣</b>的开发者交流
-        li 所有收入全部用于大会支出，你们才是这场大会真正的主人！
-      p 那么，你是否愿意和我们一起，办一场真正属于我们自己的大会？
+        li This is the VERY FIRST Swift conference in China
+        li You can communicate with best speakers from all over the world
+        li We will release the video after the conference, but without the Q&A part - you must come to listen and ask
+        li Meeting with hundreds of developers who REALLY LOVE Swift
+        li All of our incomes will be used for supporting the conference, you are the real host of this conference!
+      p So, will you support us?
       div.hand
         img(src="../assets/img/handshake.jpg")
       div.ticket__btn
-        a(href="http://weidian.com/item.html?itemID=1551102030" target="_blank") 我愿意！
+        a(href="http://weidian.com/item.html?itemID=1551102030" target="_blank") YES!
     section.sponsor(id="sponsor")
       div.sponsor__content
-        h1 赞助商
-        h4 赞助商招募中，有兴趣请邮件联系 #[a(href="mailto:lj925184928@gmail.com") 梁杰]。
+        h1 SPONSORS
+        h4 Still recruiting, if you have any interests, please contact #[a(href="mailto:lj925184928@gmail.com") Jie Liang]。
     section.medias(id="medias")
-      h1 合作伙伴
+      h1 PARTNERS
       div.medias__logo
         a.medias__card(href="http://geek2startup.com/" target="_blank")
           img(src="../assets/img/medias/g2s.png")
@@ -171,17 +170,17 @@ html(lang="zh-CN")
           img(src="../assets/img/medias/cocoachina.png")
     section.map
       div.map__content
-        h1 会场位置
-        h4 北京·待定（如果您愿意赞助场地，请直接与 #[a(href="mailto:lj925184928@gmail.com") 梁杰] 联系）
+        h1 CONFERENCE VENUE
+        h4 undetermined·Beijing(If you are willing to provide meeting place, please contact #[a(href="mailto:lj925184928@gmail.com") JIE LIANG])
     section.subscribe
       div.part0
-        h2 订阅最新消息
+        h2 Subscribe our newsletter
       div.subscribe__main
         form.emailform
           div.part1
             input.subscribe__email(type="email" placeholder="邮箱地址")
           div.part2
-            a.subscribe__btn 订阅
+            a.subscribe__btn SUBMIT
     footer
       div.main
         div
@@ -189,7 +188,7 @@ html(lang="zh-CN")
         div.long
           span Design by #[a(href="https://github.com/erqiudao" target="_blank") @erqiuda] & #[a(href="https://github.com/z4rd" target="_blank") @z4rd]
         div
-          a(href="mailto:lj925184928@gmail.com") 联系我们
+          a(href="mailto:lj925184928@gmail.com") Contact us
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

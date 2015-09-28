@@ -78,6 +78,17 @@ body .info .info__content {
     margin-top: -10rem;
   }
 }
+body .info .en {
+  width: 90rem;
+  margin-left: -45rem;
+}
+@media only screen and (max-width: 500px) {
+  body .info .en {
+    width: 26rem;
+    margin-left: -13rem;
+    margin-top: -10rem;
+  }
+}
 body .info .info__content__qr {
   width: 60rem;
   height: 35rem;
@@ -686,7 +697,7 @@ body .intro div.intro__content:after {
 body .intro h1 {
   *zoom: 1;
   width: auto;
-  max-width: 30rem;
+  max-width: 40rem;
   float: none;
   display: block;
   margin-right: auto;
@@ -1365,7 +1376,7 @@ body .map div.map__content:after {
 body .map h1 {
   *zoom: 1;
   width: auto;
-  max-width: 30rem;
+  max-width: 40rem;
   float: none;
   display: block;
   margin-right: auto;
