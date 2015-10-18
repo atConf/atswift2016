@@ -953,7 +953,7 @@ body .ticket h1 {
   padding-left: 0;
   padding-right: 0;
   margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-weight: bold;
   text-align: center;
 }
@@ -964,6 +964,38 @@ body .ticket h1:after {
 }
 body .ticket h1:after {
   clear: both;
+}
+body .ticket h4 {
+  *zoom: 1;
+  width: auto;
+  max-width: 10rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  border: solid 1px #fb7b4e;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fb7b4e;
+}
+body .ticket h4:before,
+body .ticket h4:after {
+  content: '';
+  display: table;
+}
+body .ticket h4:after {
+  clear: both;
+}
+body .ticket h4 .number {
+  font-weight: 700;
+  color: #fb7b4e;
+  font-family: "Constantia" "Georgia";
+  font-size: 22px;
+  font-style: italic;
 }
 body .ticket p {
   *zoom: 1;

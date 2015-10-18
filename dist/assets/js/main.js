@@ -1,4 +1,8 @@
 Zepto(function($) {
+
+  $.get('http://ticket.atswift.io/number', function(number) {
+    $('.number').text(number)
+  })
   function adjustBg() {
 
     $(".speaker__card img")
