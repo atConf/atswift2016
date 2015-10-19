@@ -639,6 +639,93 @@ body .speaker .speaker__card .speaker__content h4.name {
 body .speaker .speaker__card .speaker__content p.detail {
   margin-top: 2rem;
 }
+body .speaker .speaker__chairman {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 33.33333333333333%;
+  margin-right: 0%;
+  padding: 1rem;
+}
+body .speaker .speaker__chairman:before,
+body .speaker .speaker__chairman:after {
+  content: '';
+  display: table;
+}
+body .speaker .speaker__chairman:after {
+  clear: both;
+}
+@media only screen and (max-width: 768px) {
+  body .speaker .speaker__chairman {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  body .speaker .speaker__chairman:before,
+  body .speaker .speaker__chairman:after {
+    content: '';
+    display: table;
+  }
+  body .speaker .speaker__chairman:after {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body .speaker .speaker__chairman {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  body .speaker .speaker__chairman:before,
+  body .speaker .speaker__chairman:after {
+    content: '';
+    display: table;
+  }
+  body .speaker .speaker__chairman:after {
+    clear: both;
+  }
+}
+body .speaker .speaker__chairman .speaker__content {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 4rem;
+  padding-top: 1rem;
+}
+body .speaker .speaker__chairman .speaker__content:before,
+body .speaker .speaker__chairman .speaker__content:after {
+  content: '';
+  display: table;
+}
+body .speaker .speaker__chairman .speaker__content:after {
+  clear: both;
+}
+@media only screen and (max-width: 500px) {
+  body .speaker .speaker__chairman .speaker__content {
+    padding: 1rem;
+  }
+}
+body .speaker .speaker__chairman .speaker__content h4.name {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+body .speaker .speaker__chairman .speaker__content p.detail {
+  margin-top: 2rem;
+}
 body .intro {
   *zoom: 1;
   float: left;
