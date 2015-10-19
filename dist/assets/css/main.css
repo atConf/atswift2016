@@ -1162,7 +1162,7 @@ body .sponsor:after {
 body .sponsor:after {
   clear: both;
 }
-body .sponsor div.intro__content {
+body .sponsor div.sponsor__content {
   *zoom: 1;
   float: left;
   clear: none;
@@ -1171,16 +1171,35 @@ body .sponsor div.intro__content {
   margin-left: 25%;
   margin-right: 0%;
 }
-body .sponsor div.intro__content:before,
-body .sponsor div.intro__content:after {
+body .sponsor div.sponsor__content:before,
+body .sponsor div.sponsor__content:after {
   content: '';
   display: table;
 }
-body .sponsor div.intro__content:after {
+body .sponsor div.sponsor__content:after {
   clear: both;
 }
 @media only screen and (max-width: 1200px) {
-  body .sponsor div.intro__content {
+  body .sponsor div.sponsor__content {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 0%;
+  }
+  body .sponsor div.sponsor__content:before,
+  body .sponsor div.sponsor__content:after {
+    content: '';
+    display: table;
+  }
+  body .sponsor div.sponsor__content:after {
+    clear: both;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body .sponsor div.sponsor__content {
     *zoom: 1;
     float: left;
     clear: none;
@@ -1189,16 +1208,16 @@ body .sponsor div.intro__content:after {
     margin-left: 5%;
     margin-right: 0%;
   }
-  body .sponsor div.intro__content:before,
-  body .sponsor div.intro__content:after {
+  body .sponsor div.sponsor__content:before,
+  body .sponsor div.sponsor__content:after {
     content: '';
     display: table;
   }
-  body .sponsor div.intro__content:after {
+  body .sponsor div.sponsor__content:after {
     clear: both;
   }
 }
-body .sponsor h1 {
+body .sponsor div.sponsor__content h1 {
   *zoom: 1;
   width: auto;
   max-width: 30rem;
@@ -1213,18 +1232,61 @@ body .sponsor h1 {
   font-weight: bold;
   text-align: center;
 }
-body .sponsor h1:before,
-body .sponsor h1:after {
+body .sponsor div.sponsor__content h1:before,
+body .sponsor div.sponsor__content h1:after {
   content: '';
   display: table;
 }
-body .sponsor h1:after {
+body .sponsor div.sponsor__content h1:after {
   clear: both;
 }
-body .sponsor h4 {
+body .sponsor div.sponsor__content h4 {
   margin-top: 6rem;
   margin-bottom: 3rem;
   text-align: center;
+}
+body .sponsor div.sponsor__content .sponsor__card {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: inline-block;
+  padding: 1rem;
+  height: 10rem;
+  margin-bottom: 3rem;
+}
+body .sponsor div.sponsor__content .sponsor__card:before,
+body .sponsor div.sponsor__content .sponsor__card:after {
+  content: '';
+  display: table;
+}
+body .sponsor div.sponsor__content .sponsor__card:after {
+  clear: both;
+}
+@media only screen and (max-width: 500px) {
+  body .sponsor div.sponsor__content .sponsor__card {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  body .sponsor div.sponsor__content .sponsor__card:before,
+  body .sponsor div.sponsor__content .sponsor__card:after {
+    content: '';
+    display: table;
+  }
+  body .sponsor div.sponsor__content .sponsor__card:after {
+    clear: both;
+  }
+}
+body .sponsor div.sponsor__content .sponsor__card img {
+  width: 100%;
 }
 body .medias {
   *zoom: 1;
