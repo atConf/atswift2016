@@ -928,67 +928,115 @@ body .agenda div.agenda__content h1:after {
 body .agenda div.agenda__content h1:after {
   clear: both;
 }
-body .agenda div.agenda__content ul {
-  *zoom: 1;
-  float: left;
-  clear: none;
-  text-align: inherit;
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 0%;
-  line-height: 2rem;
-  letter-spacing: 0.1rem;
-  font-size: 1.6rem;
-  text-align: left;
-}
-body .agenda div.agenda__content ul:before,
-body .agenda div.agenda__content ul:after {
-  content: '';
-  display: table;
-}
-body .agenda div.agenda__content ul:after {
-  clear: both;
-}
-@media only screen and (max-width: 500px) {
-  body .agenda div.agenda__content ul {
-    *zoom: 1;
-    float: left;
-    clear: none;
-    text-align: inherit;
-    width: 100%;
-    margin-left: 0%;
-    margin-right: 0%;
-    text-align: left;
-  }
-  body .agenda div.agenda__content ul:before,
-  body .agenda div.agenda__content ul:after {
-    content: '';
-    display: table;
-  }
-  body .agenda div.agenda__content ul:after {
-    clear: both;
-  }
-}
-body .agenda div.agenda__content p {
+body .agenda div.agenda__content .agenda__list {
   *zoom: 1;
   width: auto;
-  max-width: 20rem;
+  max-width: 50rem;
   float: none;
   display: block;
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  color: #808080;
-  margin-bottom: 6rem;
+  list-style: none;
+  display: block;
+  background-color: #fff;
 }
-body .agenda div.agenda__content p:before,
-body .agenda div.agenda__content p:after {
+body .agenda div.agenda__content .agenda__list:before,
+body .agenda div.agenda__content .agenda__list:after {
   content: '';
   display: table;
 }
-body .agenda div.agenda__content p:after {
+body .agenda div.agenda__content .agenda__list:after {
   clear: both;
+}
+@media only screen and (max-width: 768px) {
+  body .agenda div.agenda__content .agenda__list {
+    *zoom: 1;
+    width: auto;
+    max-width: 30rem;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  body .agenda div.agenda__content .agenda__list:before,
+  body .agenda div.agenda__content .agenda__list:after {
+    content: '';
+    display: table;
+  }
+  body .agenda div.agenda__content .agenda__list:after {
+    clear: both;
+  }
+}
+body .agenda div.agenda__content .agenda__list li {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 10rem;
+  border-bottom: 2px solid #f8f8f8;
+  text-align: left;
+  padding-left: 5rem;
+}
+body .agenda div.agenda__content .agenda__list li:before,
+body .agenda div.agenda__content .agenda__list li:after {
+  content: '';
+  display: table;
+}
+body .agenda div.agenda__content .agenda__list li:after {
+  clear: both;
+}
+@media only screen and (max-width: 768px) {
+  body .agenda div.agenda__content .agenda__list li {
+    padding-left: 1rem;
+  }
+}
+body .agenda div.agenda__content .agenda__list li time {
+  display: inline-block;
+  color: #111;
+  line-height: 10rem;
+  font-weight: bold;
+  font-size: 3.2rem;
+  vertical-align: middle;
+  width: 10rem;
+}
+@media only screen and (max-width: 768px) {
+  body .agenda div.agenda__content .agenda__list li time {
+    font-size: 2rem;
+    width: 5rem;
+  }
+}
+body .agenda div.agenda__content .agenda__list li div {
+  display: inline-block;
+  width: 30rem;
+  text-align: right;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+  body .agenda div.agenda__content .agenda__list li div {
+    width: 15rem;
+  }
+}
+body .agenda div.agenda__content .agenda__list li div span {
+  color: #000;
+  line-height: 2rem;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 1200px) {
+  body .agenda div.agenda__content .agenda__list li div span {
+    font-size: 1.8rem;
+  }
+}
+body .agenda div.agenda__content .agenda__list li div p {
+  color: #999;
+  line-height: 2rem;
+  font-size: 1.8rem;
 }
 body .ticket {
   *zoom: 1;

@@ -324,20 +324,49 @@ body
         margin-bottom 3rem
         font-weight bold
         text-align center
-      ul
-        span(0.6, offset:0.2)
-        +below(500px)
+      .agenda__list
+        center(50rem)
+        +below(768px)
+          center(30rem)
+        list-style none
+        display block
+        background-color white
+        li
           span(1)
+          height 10rem
+          border-bottom 2px solid #f8f8f8
           text-align left
-        line-height 2rem
-        letter-spacing 0.1rem
-        font-size 1.6rem
-        text-align left
-      p
-        center(20rem)
-        color gray
-        margin-bottom 6rem
-
+          padding-left 5rem
+          +below(768px)
+            padding-left 1rem            
+          time
+            display inline-block
+            color: #111;
+            line-height 10rem
+            font-weight: bold;
+            font-size: 3.2rem;
+            vertical-align: middle;
+            width: 10rem;
+            +below(768px)
+              font-size 2rem
+              width 5rem
+          div
+            display inline-block
+            width 30rem
+            +below(768px)
+              width 15rem
+            text-align right
+            vertical-align middle
+            span
+              color black
+              line-height 2rem
+              font-size 2rem
+              +below(1200px)
+                font-size 1.8rem
+            p
+              color #999
+              line-height 2rem
+              font-size 1.8rem
   .ticket
     layout2()
     +below(1200px)
