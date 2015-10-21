@@ -1013,28 +1013,23 @@ body .agenda div.agenda__content .agenda__list li time {
   font-weight: bold;
   font-size: 3.2rem;
   vertical-align: middle;
-  width: 10rem;
+  width: 30%;
 }
 @media only screen and (max-width: 768px) {
   body .agenda div.agenda__content .agenda__list li time {
     font-size: 2rem;
-    width: 5rem;
+    width: 20%;
   }
 }
 body .agenda div.agenda__content .agenda__list li div {
   display: inline-block;
-  width: 30rem;
+  width: 65%;
   text-align: right;
   vertical-align: middle;
 }
 @media only screen and (max-width: 768px) {
   body .agenda div.agenda__content .agenda__list li div {
-    width: 21rem;
-  }
-}
-@media only screen and (max-width: 320px) {
-  body .agenda div.agenda__content .agenda__list li div {
-    width: 17rem;
+    width: 75%;
   }
 }
 body .agenda div.agenda__content .agenda__list li div span {
