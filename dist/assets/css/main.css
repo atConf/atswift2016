@@ -637,6 +637,7 @@ body .speaker .speaker__card .speaker__content h4.name {
   margin-bottom: 2rem;
 }
 body .speaker .speaker__card .speaker__content p.detail {
+  text-align: left;
   margin-top: 2rem;
 }
 body .speaker .speaker__chairman {
@@ -644,8 +645,8 @@ body .speaker .speaker__chairman {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 33.33333333333333%;
-  margin-left: 33.33333333333333%;
+  width: 50%;
+  margin-left: 25%;
   margin-right: 0%;
   padding: 1rem;
 }
@@ -725,6 +726,7 @@ body .speaker .speaker__chairman .speaker__content h4.name {
 }
 body .speaker .speaker__chairman .speaker__content p.detail {
   margin-top: 2rem;
+  text-align: left;
 }
 body .intro {
   *zoom: 1;
@@ -860,6 +862,7 @@ body .agenda {
   margin-right: 0%;
   color: #34495e;
   background-color: #f8f8f8;
+  padding-bottom: 5rem;
 }
 body .agenda:before,
 body .agenda:after {
@@ -970,6 +973,12 @@ body .agenda div.agenda__content .agenda__list:after {
   body .agenda div.agenda__content .agenda__list:after {
     clear: both;
   }
+}
+body .agenda div.agenda__content .agenda__list li.lottery div span {
+  color: #f00;
+}
+body .agenda div.agenda__content .agenda__list li.lunch div span {
+  color: #2c6700;
 }
 body .agenda div.agenda__content .agenda__list li {
   *zoom: 1;

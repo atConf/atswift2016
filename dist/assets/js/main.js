@@ -6,8 +6,8 @@ Zepto(function($) {
   function adjustBg() {
 
     $(".speaker__card img, .speaker__chairman img")
-      .width(Math.round($(".speaker__content").width() * 0.5))
-      .height(Math.round($(".speaker__content").width() * 0.5))
+      .width(Math.round($(".speaker__card .speaker__content").width() * 0.5))
+      .height(Math.round($(".speaker__card .speaker__content").width() * 0.5))
       .css({
         borderRadius: Math.round($(".speaker__content").width() * 0.25)
       })

@@ -35,7 +35,7 @@ html(lang="zh-CN")
             li
               a(href="#speaker") SPEAKERS
             li
-              a(href="#agenda") SUBJECTS
+              a(href="#agenda") AGENDA
             li
               a(href="#sponsor") SPONSORS
             li
@@ -81,6 +81,14 @@ html(lang="zh-CN")
           h3.intro__reason High Quality
           p.intro__detail All of our speakers and subjects are strictly chosen in order to make sure you get the best experience.
     section.speaker(id="speaker")
+      h1 CHAIRMAN
+      div.speaker__chairman
+        div.speaker__content
+          h4.name QIAO TANG
+          a(href="http://devtang.com" target="_blank")
+            img(src="../assets/img/tangqiao.png")
+          p.detail A blogger, InfoQ editor and senior iOS developer. He had worked in netease and developped netease email, netease microblog and youdao note. Now he works in a startup company named yuantiku.com and he is the product owner of xiaoyuansouti app. 
+          p.detail He likes writing and sharing, he published a book named &lt;Pro iOS&gt;, he hosts his #[a(href="http://blog.devtang.com" target="_blank") technique blog] for more than 3 years. He also creates a wechat public accout named iOSDevTips.
       h1 SPEAKERS
       div.speaker__card.r.b
         div.speaker__content
@@ -124,12 +132,83 @@ html(lang="zh-CN")
           p.detail ~3 MORE SPEAKERS TO BE ANNOUNCED
     section.agenda(id="agenda")
       div.agenda__content
-        h1 SUBJECTS
-        ul
-          li New features in Swift 2
-          li The open source of Swift and it's impact on developers
-          li Best practices of migrating from Objective-C to Swift
-          li How to learn Swift
+        h1 AGENDA
+        h4 *tentative, updating
+        ul.agenda__list
+          li
+            time 08:00
+            div
+              span Sign
+          li
+            time 09:00
+            div
+              span Open
+              p Jie Liang
+          li
+            time 09:10
+            div
+              span Some Advanced Topic
+              p Chris Eidhof
+          li
+            time 09:50
+            div
+              span Use Swift in Big Project
+              p Ruoyu Fu
+          li.lottery
+            time 10:30
+            div
+              span Gift
+          li
+            time 10:40
+            div
+              span iOS Mobile Developing Pattern for Future
+              p Jason Li
+          li
+            time 11:20
+            div
+              span Undecided
+              p Sam Soffes
+          li.lunch
+            time 12:00
+            div
+              span Lunch
+          li.lottery
+            time 13:20
+            div
+              span Gift
+          li
+            time 13:30
+            div
+              span ReactiveCocoa 4.0 or How to Develop and Maintain a Framework
+              p Wei Wang
+          li
+            time 14:10
+            div
+              span Undecided Topic
+              p Kevin Zhou
+          li
+            time 14:50
+            div
+              span Break
+          li
+            time 15:10
+            div
+              span Undecided Topic
+              p Undecided Speaker
+          li
+            time 15:50
+            div
+              span Undecided Topic
+              p Undecided Speaker
+          li
+            time 16:30
+            div
+              span Undecided Topic
+              p Undecided Speaker
+          li.lottery
+            time 17:10
+            div
+              span Gift
     section.ticket(id="ticket")
       h1 TICKET
       p Holding a high-quality conference not only requires energy but <b>also</b> needs money Everything will not be able to run without enough financial support, so we are raising money through various ways.
@@ -180,6 +259,8 @@ html(lang="zh-CN")
           img(src="../assets/img/medias/tuicool.jpg")
         a.medias__card(href="https://xitu.io" target="_blank")
           img(src="../assets/img/medias/xitu.jpg")
+        a.medias__card(href="https://testerhome.com/" target="_blank")
+          img(src="../assets/img/medias/testerhome.png")    
     section.map
       div.map__content
         h1 CONFERENCE VENUE
