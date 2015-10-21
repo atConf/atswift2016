@@ -466,6 +466,8 @@ body
         margin-bottom 3rem
         font-weight bold
         text-align center
+      hr
+        width 100%
       h4
         margin-top 6rem
         margin-bottom 3rem
@@ -480,6 +482,12 @@ body
         margin-bottom 3rem
         img
           width 100%
+      .sponsor__card.center
+          span(1/3, offset: 1/3)
+          +below(500px)
+            span(1/2, offset: 1/4)
+      span
+        color #999
   .medias
     layout2()
     +below(1200px)

@@ -1384,6 +1384,9 @@ body .sponsor div.sponsor__content h1:after {
 body .sponsor div.sponsor__content h1:after {
   clear: both;
 }
+body .sponsor div.sponsor__content hr {
+  width: 100%;
+}
 body .sponsor div.sponsor__content h4 {
   margin-top: 6rem;
   margin-bottom: 3rem;
@@ -1431,6 +1434,45 @@ body .sponsor div.sponsor__content .sponsor__card:after {
 }
 body .sponsor div.sponsor__content .sponsor__card img {
   width: 100%;
+}
+body .sponsor div.sponsor__content .sponsor__card.center {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 33.33333333333333%;
+  margin-left: 33.33333333333333%;
+  margin-right: 0%;
+}
+body .sponsor div.sponsor__content .sponsor__card.center:before,
+body .sponsor div.sponsor__content .sponsor__card.center:after {
+  content: '';
+  display: table;
+}
+body .sponsor div.sponsor__content .sponsor__card.center:after {
+  clear: both;
+}
+@media only screen and (max-width: 500px) {
+  body .sponsor div.sponsor__content .sponsor__card.center {
+    *zoom: 1;
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 0%;
+  }
+  body .sponsor div.sponsor__content .sponsor__card.center:before,
+  body .sponsor div.sponsor__content .sponsor__card.center:after {
+    content: '';
+    display: table;
+  }
+  body .sponsor div.sponsor__content .sponsor__card.center:after {
+    clear: both;
+  }
+}
+body .sponsor div.sponsor__content span {
+  color: #999;
 }
 body .medias {
   *zoom: 1;
