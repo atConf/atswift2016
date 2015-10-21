@@ -1029,7 +1029,12 @@ body .agenda div.agenda__content .agenda__list li div {
 }
 @media only screen and (max-width: 768px) {
   body .agenda div.agenda__content .agenda__list li div {
-    width: 15rem;
+    width: 21rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body .agenda div.agenda__content .agenda__list li div {
+    width: 17rem;
   }
 }
 body .agenda div.agenda__content .agenda__list li div span {
