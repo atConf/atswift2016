@@ -461,7 +461,7 @@ body .header .header__social .header__social__btn {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 22.75%;
+  width: 17.6%;
   margin-left: 0%;
   margin-right: 3%;
   padding: 1rem;
@@ -491,6 +491,9 @@ body .header .header__social .header__social__btn a:hover {
 }
 body .header .header__social .header__social__btn a i {
   font-size: 2rem;
+}
+body .header .header__social .header__social__btn a img {
+  width: 2rem;
 }
 body .speaker {
   *zoom: 1;
