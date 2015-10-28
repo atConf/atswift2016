@@ -1388,12 +1388,42 @@ body .sponsor div.sponsor__content h1:after {
   clear: both;
 }
 body .sponsor div.sponsor__content hr {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   width: 100%;
 }
+body .sponsor div.sponsor__content hr:before,
+body .sponsor div.sponsor__content hr:after {
+  content: '';
+  display: table;
+}
+body .sponsor div.sponsor__content hr:after {
+  clear: both;
+}
 body .sponsor div.sponsor__content h4 {
+  *zoom: 1;
+  float: left;
+  clear: none;
+  text-align: inherit;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: 0%;
   margin-top: 6rem;
   margin-bottom: 3rem;
   text-align: center;
+}
+body .sponsor div.sponsor__content h4:before,
+body .sponsor div.sponsor__content h4:after {
+  content: '';
+  display: table;
+}
+body .sponsor div.sponsor__content h4:after {
+  clear: both;
 }
 body .sponsor div.sponsor__content .sponsor__card {
   *zoom: 1;
