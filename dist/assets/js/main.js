@@ -42,6 +42,21 @@ Zepto(function($) {
   $(".sm_btns a").click(function() {
     $(".sm_nav").click()
   })
+
+  var map = new AMap.Map('map__container',{
+        zoom: 14,
+        center: [116.352379, 39.981041]
+    });
+  var marker = new AMap.Marker({
+        position: [116.352379, 39.981041],
+        map:map
+    });
+  AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){
+    var toolBar = new AMap.ToolBar();
+    var scale = new AMap.Scale();
+    map.addControl(toolBar);
+    map.addControl(scale);
+})
 });
 (function ($) {
   $.fn.slideUp = function (duration) {    

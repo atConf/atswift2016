@@ -15,6 +15,7 @@ html(lang="zh-CN")
     script(type="text/javascript" src="../assets/js/zepto.min.js")
     script(type="text/javascript" src="../assets/js/main.js")
     script(type="text/javascript" src="../assets/js/subscribe.js")
+    script(type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=7e8eb3422e3f2a609d1a32a76fd4981a")
   body
     img(src="../assets/img/wechatLogo.png" style="position: fixed; top: -9999px;")
     section.info
@@ -330,7 +331,8 @@ html(lang="zh-CN")
     section.map
       div.map__content
         h1 会场位置
-        span 北京·待定（如果您愿意赞助场地，请直接与 #[a(href="mailto:lj925184928@gmail.com") 梁杰] 联系）
+        h4 北航新主楼·会议中心
+        div(id="map__container")
     section.subscribe
       div.part0
         h2 订阅最新消息

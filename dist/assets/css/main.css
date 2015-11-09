@@ -1686,6 +1686,26 @@ body .map div.map__content:after {
     clear: both;
   }
 }
+body .map div#map__container {
+  *zoom: 1;
+  width: auto;
+  max-width: 120rem;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  height: 40rem;
+}
+body .map div#map__container:before,
+body .map div#map__container:after {
+  content: '';
+  display: table;
+}
+body .map div#map__container:after {
+  clear: both;
+}
 body .map h1 {
   *zoom: 1;
   width: auto;
