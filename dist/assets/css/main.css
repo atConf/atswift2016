@@ -641,6 +641,7 @@ body .speaker .speaker__card .speaker__content h4.name {
 }
 body .speaker .speaker__card .speaker__content p.detail {
   text-align: left;
+  line-height: 2.2rem;
   margin-top: 2rem;
 }
 body .speaker .speaker__chairman {
@@ -730,6 +731,7 @@ body .speaker .speaker__chairman .speaker__content h4.name {
 body .speaker .speaker__chairman .speaker__content p.detail {
   margin-top: 2rem;
   text-align: left;
+  line-height: 2.2rem;
 }
 body .intro {
   *zoom: 1;
