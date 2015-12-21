@@ -73,8 +73,8 @@ body .info .info__content {
 }
 @media only screen and (max-width: 500px) {
   body .info .info__content {
-    width: 26rem;
-    margin-left: -13rem;
+    width: 30rem;
+    margin-left: -15rem;
     margin-top: -10rem;
   }
 }
