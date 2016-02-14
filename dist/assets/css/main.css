@@ -1946,8 +1946,8 @@ body footer div.main {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 40%;
-  margin-left: 30%;
+  width: 60%;
+  margin-left: 20%;
   margin-right: 0%;
 }
 body footer div.main:before,
@@ -2001,7 +2001,7 @@ body footer div.main div {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 25%;
+  width: 20%;
   margin-left: 0%;
   margin-right: 0%;
 }
@@ -2022,7 +2022,7 @@ body footer div.main div.long {
   float: left;
   clear: none;
   text-align: inherit;
-  width: 50%;
+  width: 40%;
   margin-left: 0%;
   margin-right: 0%;
 }
