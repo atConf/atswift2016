@@ -157,6 +157,7 @@ body .info .info__subtitle .info__down {
 }
 body .info .info__btn {
   padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 body .info .info__btn a {
   cursor: pointer;
