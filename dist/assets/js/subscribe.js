@@ -22,7 +22,7 @@ $(function() {
       }
       $(".subscribe__email").addClass("disabled")
       $(".subscribe__btn").addClass("disabled").text("稍等")
-      $.getJSON("http://ggchecker.githuber.info/atswiftaddemail/" + $(".subscribe__email").val().trim(), function(data) {
+      $.getJSON("https://ggchecker.githuber.info/atswiftaddemail/" + $(".subscribe__email").val().trim(), function(data) {
         if (data["success"] == "success") {
           localStorage.setItem("atswiftsubscribed", true)
           $(".subscribe__btn").text("成功！")

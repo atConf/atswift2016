@@ -32,7 +32,7 @@ gulp.task('stylus', function (done) {
 gulp.task('jade', function (done) {
   gulp.src(paths.jade)
     .pipe(jade())
-    .pipe(gulp.dest('./dist/html/'))
+    .pipe(gulp.dest('./dist/'))
     .on('end', done);
 });
 

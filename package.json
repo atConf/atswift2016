@@ -16,5 +16,8 @@
     "imagemin-jpeg-recompress": "^4.3.0",
     "jeet": "^6.1.2",
     "rupture": "^0.6.1"
+  },
+  "engines": {
+    "node": "10.24.1"
   }
 }

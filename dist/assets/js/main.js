@@ -1,6 +1,6 @@
 Zepto(function($) {
 
-  $.get('http://ticket.atswift.io/number', function(number) {
+  $.get('https://ticket.atswift2016.swiftgg.team/number', function(number) {
     $('.number').text(number)
   })
   function adjustBg() {
